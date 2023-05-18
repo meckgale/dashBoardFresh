@@ -13,7 +13,19 @@ body {
     background-color: skyblue;
     grid-column: 1 / 2;
     display: grid;
-    gap: 2rem;
+    grid-template-rows: auto auto auto;
+}
+
+.dashboard {
+    grid-row: 1 / 2;
+}
+
+.sideGroup1 {
+    grid-row: 2 / 3;
+}
+
+.sideGroup2 {
+    grid-row: 3 / 4;
 }
 
 
@@ -56,7 +68,7 @@ body {
     grid-row: 2 / 3;
 }
 
-/* .logo {
+.logo {
     display: inline-block;
     width: 1rem;
     height: 1rem;
@@ -103,4 +115,4 @@ body {
 
 .dashboardImage {
     background-image: url(logos/dashboard_logo.png);
-} */
+}
