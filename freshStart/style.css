@@ -1,21 +1,32 @@
+:root {
+    --blue: #0ea5e9;
+    --gray: #d1d5db;
+    --white: #f1f5f9;
+}
+
 * {
     margin: 0;
     padding: 0;
+}
+
+html {
     height: 100%;
 }
 
 body {
     display: grid;
     grid-template-columns: 1fr 4fr;
+    height: inherit;
 }
 
 .left {
-    background-color: skyblue;
+    background-color: var(--blue);
     grid-column: 1 / 2;
     display: grid;
-    gap: 2rem;
+    grid-template-rows: 1fr 3fr 6fr;
+    font-weight: 600;
+    color: var(--white);
 }
-
 
 .right {
     grid-column: 2 / 3;
@@ -25,14 +36,14 @@ body {
 
 .header {
     grid-row: 1 / 2;
-    background-color: whitesmoke;
+    background-color: var(--white);
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
 
 .flow {
     grid-row: 2 / 3;
-    background-color: lightgray;
+    background-color: var(--gray);
     display: grid;
     grid-template-columns: 3fr 1fr;
     gap: 1rem;
@@ -56,13 +67,15 @@ body {
     grid-row: 2 / 3;
 }
 
-/* .logo {
+.logo {
     display: inline-block;
     width: 1rem;
     height: 1rem;
     background-repeat: no-repeat;
     background-size: contain;
     margin-right: 1rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
 }
 
 .home {
@@ -103,4 +116,4 @@ body {
 
 .dashboardImage {
     background-image: url(logos/dashboard_logo.png);
-} */
+}
