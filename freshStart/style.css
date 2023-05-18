@@ -23,9 +23,25 @@ body {
     background-color: var(--blue);
     grid-column: 1 / 2;
     display: grid;
+<<<<<<< HEAD
     grid-template-rows: 1fr 3fr 6fr;
     font-weight: 600;
     color: var(--white);
+=======
+    grid-template-rows: auto auto auto;
+}
+
+.dashboard {
+    grid-row: 1 / 2;
+}
+
+.sideGroup1 {
+    grid-row: 2 / 3;
+}
+
+.sideGroup2 {
+    grid-row: 3 / 4;
+>>>>>>> a6ef1208680714450eb4704b1fc461fd55bd4b33
 }
 
 .right {
