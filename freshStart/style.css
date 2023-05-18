@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.left {
+    background-color: skyblue;
+    grid-column: 1 / 2;
+    display: grid;
+    gap: 2rem;
+}
+
+
+.right {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 5fr;
+}
+
+.header {
+    grid-row: 1 / 2;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.flow {
+    grid-row: 2 / 3;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+}
+
+.content {
+    grid-column: 1 / 2;
+}
+
+.topics {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.top {
+    grid-row: 1 / 2;
+}
+
+.bottom {
+    grid-row: 2 / 3;
+}
+
+/* .logo {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 1rem;
+}
+
+.home {
+    background-image: url(logos/home_logo.png);
+}
+
+.profile {
+    background-image: url(logos/card_logo.png);
+}
+
+.messages {
+    background-image: url(logos/message_logo.png);
+}
+
+.history {
+    background-image: url(logos/history_logo.png);
+}
+
+.tasks {
+    background-image: url(logos/tasks_logo.png);
+}
+
+.communities {
+    background-image: url(logos/communities_logo.png);
+}
+
+.settings {
+    background-image: url(logos/settings_logo.png);
+}
+
+.support {
+    background-image: url(logos/support_logo.png);
+}
+
+.privacy {
+    background-image: url(logos/privacy_logo.png);
+}
+
+.dashboardImage {
+    background-image: url(logos/dashboard_logo.png);
+} */
