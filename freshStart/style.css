@@ -23,25 +23,9 @@ body {
     background-color: var(--blue);
     grid-column: 1 / 2;
     display: grid;
-<<<<<<< HEAD
     grid-template-rows: 1fr 3fr 6fr;
     font-weight: 600;
     color: var(--white);
-=======
-    grid-template-rows: auto auto auto;
-}
-
-.dashboard {
-    grid-row: 1 / 2;
-}
-
-.sideGroup1 {
-    grid-row: 2 / 3;
-}
-
-.sideGroup2 {
-    grid-row: 3 / 4;
->>>>>>> a6ef1208680714450eb4704b1fc461fd55bd4b33
 }
 
 .right {
@@ -54,7 +38,33 @@ body {
     grid-row: 1 / 2;
     background-color: var(--white);
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 1fr 2fr ;
+}
+
+.div_search_icon {
+    grid-column: 1 / 2;
+    justify-self: flex-end;
+}
+
+.search_bar {
+    grid-column: 2 / 3;
+    margin-top: 1rem;
+}
+
+input {
+    width: 80%;
+    background-color: var(--gray);
+    border-style: none;
+    border-radius: 1rem;
+}
+
+.div_alarm_icon {
+    grid-column: 3 / 4;
 }
 
 .flow {
@@ -132,4 +142,12 @@ body {
 
 .dashboardImage {
     background-image: url(logos/dashboard_logo.png);
+}
+
+.search_icon {
+    background-image: url(logos/search_logo.png);
+}
+
+.alarm_icon {
+    background-image: url(logos/alarm_logo.png);
 }
