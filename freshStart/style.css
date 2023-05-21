@@ -51,7 +51,7 @@ li {
 
 .search {
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 1fr 2fr ;
+    grid-template-columns: 1fr 7fr 1fr 1fr 2fr ;
     margin-right: 2rem;
 }
 
@@ -189,7 +189,7 @@ input {
 
 .buttons {
     display: grid;
-    grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 5fr 1fr 1fr 1fr;
     margin-right: 2rem;
     gap: 1rem;
 }
@@ -234,6 +234,8 @@ input {
     padding: 0.5rem 1rem 0.5rem 1rem;
     border-radius: 2rem;
     display: inline-block;
+    width: 6rem;
+    height: 2.5rem;
 }
 
 .headline {
@@ -289,12 +291,79 @@ input {
 
 .content1 {
     background-color: var(--white);
+    border-radius: 2%;
+    box-sizing: border-box;
+    padding: 10% 5% 10% 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
 }
 
 .content2 {
     background-color: var(--white);
+    border-radius: 2%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
 }
 
 .headline_top, .headline_bottom {
     align-self: center;
+}
+
+.anno_text {
+    font-size: 0.9rem;
+    color: gray;
+}
+
+.content1 > div {
+    margin-left: 1rem;
+}
+
+.content1 > div:nth-child(2) {
+    border-top: 0.2rem solid gray;
+    border-bottom: 0.2rem solid gray;
+    border-width: thin;
+    padding: 5% 0 5% 0;
+}
+
+.trend_div {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.picture {
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.trend_text {
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.profile_kakashi {
+    background-image: url(pictures/kakashi.png);
+}
+
+.profile_grogu {
+    background-image: url(pictures/grogu.png);
+}
+
+.profile_stuart {
+    background-image: url(pictures/profile_picture.png);
+}
+
+.profile_dobby {
+    background-image: url(pictures/dobby.png);
+}
+
+.trend_text > p {
+    font-size: 0.9rem;
+    color: gray;
 }
